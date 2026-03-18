@@ -1,0 +1,435 @@
+/* Events Page Specific Styles */
+
+/* Events Header */
+.events-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--dark-bg));
+    color: white;
+    padding: 8rem 0 4rem;
+    text-align: center;
+}
+
+/* Calendar Section */
+.calendar-section {
+    background: var(--light-bg);
+}
+
+.calendar-container {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.calendar-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.calendar-header .btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-header .btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background: #E5E7EB;
+}
+
+.calendar-day {
+    background: white;
+    padding: 1rem;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    transition: var(--transition);
+}
+
+.calendar-day:hover {
+    background: var(--light-bg);
+}
+
+.calendar-day.other-month {
+    color: #9CA3AF;
+    background: #F9FAFB;
+}
+
+.calendar-day.has-event {
+    background: linear-gradient(135deg, rgba(107, 70, 193, 0.1), rgba(245, 158, 11, 0.1));
+}
+
+.calendar-day .day-number {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.event-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.event-dot.music { background: #3B82F6; }
+.event-dot.theatre { background: #EF4444; }
+.event-dot.visual-arts { background: #10B981; }
+.event-dot.dance { background: #F59E0B; }
+.event-dot.film { background: #8B5CF6; }
+
+/* Legend Card */
+.legend-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    height: fit-content;
+}
+
+.legend-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+}
+
+.legend-color.music { background: #3B82F6; }
+.legend-color.theatre { background: #EF4444; }
+.legend-color.visual-arts { background: #10B981; }
+.legend-color.dance { background: #F59E0B; }
+.legend-color.film { background: #8B5CF6; }
+
+/* Event Listings */
+.events-listing {
+    background: white;
+}
+
+.event-card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.event-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.event-card:hover .event-image img {
+    transform: scale(1.05);
+}
+
+.event-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-content {
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.event-date {
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 70px;
+    height: fit-content;
+}
+
+.event-date .day {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date .month {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.event-info {
+    flex-grow: 1;
+}
+
+.event-info h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.venue {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.venue i {
+    color: var(--accent-color);
+}
+
+.description {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.event-actions {
+    margin-top: auto;
+}
+
+/* Testimonials */
+.testimonials-section {
+    background: var(--light-bg);
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    background: var(--light-bg);
+    padding: 2rem;
+    transition: var(--transition);
+}
+
+
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    height: 100%;
+    transition: var(--transition);
+    opacity: 0;
+    transform: translateY(30px);
+}
+.testimonial-card.scroll-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.testimonial-author strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-author span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+
+/* Booking Modal */
+.event-summary {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+.event-summary h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.event-summary p {
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.event-summary i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.total-price {
+    background: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.total-price h5 {
+    color: var(--primary-color);
+    margin: 0;
+}
+
+/* Color coding for event types */
+.event-card.music {
+    border-left: 4px solid #3B82F6;
+}
+
+.event-card.theatre {
+    border-left: 4px solid #EF4444;
+}
+
+.event-card.visual-arts {
+    border-left: 4px solid #10B981;
+}
+
+.event-card.dance {
+    border-left: 4px solid #F59E0B;
+}
+
+.event-card.film {
+    border-left: 4px solid #8B5CF6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-grid {
+        font-size: 0.9rem;
+    }
+    
+    .calendar-day {
+        padding: 0.5rem;
+        min-height: 60px;
+    }
+    
+    .event-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .event-date {
+        align-self: flex-start;
+        min-width: 60px;
+    }
+    
+    .event-date .day {
+        font-size: 1.5rem;
+    }
+    
+    .filter-controls {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .legend-card {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .events-header {
+        padding: 6rem 0 3rem;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .calendar-header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .calendar-header h3 {
+        order: 1;
+    }
+    
+    .calendar-day {
+        min-height: 50px;
+        padding: 0.25rem;
+    }
+    
+    .event-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}

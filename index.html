@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtsVibe - Discover the World of Art & Entertainment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ArtsVibe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="hero-title fade-in">Unleashing Creativity Across the Globe</h1>
+                        <p class="hero-subtitle fade-in-delay">Experience the finest in arts, entertainment, and cultural performances</p>
+                        <div class="hero-buttons fade-in-delay-2">
+                            <a href="gallery.html" class="btn btn-primary btn-lg me-3">Explore Gallery</a>
+                            <a href="events.html" class="btn btn-outline-light btn-lg">See Upcoming Shows</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Highlights -->
+    <section class="featured-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Featured Highlights</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1266808/pexels-photo-1266808.jpeg" alt="Latest Artworks" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Latest Artworks</h4>
+                            <p>Discover contemporary masterpieces from emerging and established artists worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Trending Performances" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Trending Performances</h4>
+                            <p>Experience captivating live performances that are taking the entertainment world by storm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="card-image">
+                            <img src="https://images.pexels.com/photos/1481880/pexels-photo-1481880.jpeg" alt="Artist Spotlights" class="img-fluid">
+                        </div>
+                        <div class="card-content">
+                            <h4>Popular Artist Spotlights</h4>
+                            <p>Meet the creative minds behind the most influential works in contemporary culture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Slider -->
+    <section class="media-slider-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Behind the Scenes</h2>
+            <div id="mediaCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="video-container">
+                                    <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg" alt="Behind the scenes" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Artist Interview Series</h3>
+                                <p>Dive deep into the creative process with exclusive interviews from our featured artists. Discover their inspiration, techniques, and upcoming projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="video-container">
+                                    <img src="https://images.pexels.com/photos/3876442/pexels-photo-3876442.jpeg" alt="Making of documentary" class="img-fluid rounded">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Making-of Documentaries</h3>
+                                <p>Go behind the curtain and see how masterpieces come to life. From concept to completion, witness the magic of creation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Teaser -->
+    <section class="event-teaser-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Upcoming Premiere</h2>
+                    <h3 class="event-title">Symphony of Colors</h3>
+                    <p class="event-description">An immersive multimedia experience combining classical music with digital art projections. Don't miss this groundbreaking collaboration.</p>
+                    <div class="event-details">
+                        <div class="detail-item">
+                            <i class="bi bi-calendar3"></i>
+                            <span>March 15, 2025</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Grand Concert Hall, New York</span>
+                        </div>
+                    </div>
+                    <div class="countdown-timer" id="countdown">
+                        <div class="time-unit">
+                            <span class="number" id="days">00</span>
+                            <span class="label">Days</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="hours">00</span>
+                            <span class="label">Hours</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="number" id="minutes">00</span>
+                            <span class="label">Minutes</span>
+                        </div>
+                    </div>
+                    <a href="events.html" class="btn btn-accent btn-lg mt-3">Get Tickets</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg" alt="Symphony of Colors" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title text-white">Stay Connected</h2>
+                    <p class="text-white-50 mb-4">Subscribe to our newsletter for the latest updates on exhibitions, performances, and exclusive events.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control" placeholder="Enter your email address" required>
+                            <button class="btn btn-accent" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5>ArtsVibe</h5>
+                    <p>Unleashing creativity and bringing world-class entertainment experiences to audiences everywhere.</p>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Contact</h6>
+                    <p><i class="bi bi-envelope me-2"></i>info@artsvibe.com</p>
+                    <p><i class="bi bi-phone me-2"></i>+1 (555) 123-4567</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 ArtsVibe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p class="mb-0">Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login to ArtsVibe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register for ArtsVibe</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="agreeTerms" required>
+                            <label class="form-check-label" for="agreeTerms">I agree to the Terms of Service</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Send Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="feedbackForm">
+                        <div class="mb-3">
+                            <label for="feedbackName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="feedbackName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedbackEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="feedbackEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedbackType" class="form-label">Feedback Type</label>
+                            <select class="form-select" id="feedbackType" required>
+                                <option value="">Select type</option>
+                                <option value="general">General Feedback</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="suggestion">Suggestion</option>
+                                <option value="compliment">Compliment</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedbackMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="feedbackMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
